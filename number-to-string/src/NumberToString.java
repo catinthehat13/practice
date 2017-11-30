@@ -37,7 +37,7 @@ public class NumberToString
 					"eighty", 
 					"ninety"};
 		
-		String [] tensSt = {	"ten",
+		String [] teensSt = {	"ten",
 					"eleven",
 					"twelve",
 					"thirteen",
@@ -53,7 +53,7 @@ public class NumberToString
 		
 		if(tens == 1)
 		{
-			return tensSt[ones];
+			return teensSt[ones];
 		}
 		else
 		{
@@ -63,24 +63,24 @@ public class NumberToString
 	
 	private String getHundred(int hundred)
 	{
-		String hSt = "";
+		String hundredSt = "";
 		
 		int h = (int)(hundred / 100);
 		int hRemainder = hundred % 100;
 		
 		if(h > 0)
 		{
-			hSt = getSingle(h) + " hundred";
+			hundredSt = getSingle(h) + " hundred";
 			
 			if(hRemainder > 0)
 			{
-				hSt += " and ";
+				hundredSt += " and ";
 			}
 		}
 		
-		hSt += getTens(hRemainder);
+		hundredSt += getTens(hRemainder);
 		
-		return hSt;
+		return hundredSt;
 	}
 	
 	public void printIt(int i)
