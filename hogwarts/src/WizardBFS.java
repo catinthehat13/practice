@@ -1,13 +1,15 @@
-package interview;
+package hogwarts;
 
 import java.util.*;
 
-public class Hogwarts {
-
+public class WizardBFS {
+	
+	// Destination wizard number.
+	final int START_WIZARD = 0;
 	final int END_WIZARD = 9;
 	
 	public int getCost(List<List<Integer>> wizards) {
-		List<List<Integer>> paths = this.getPath(0, wizards, 0);
+		List<List<Integer>> paths = this.getPath(START_WIZARD, wizards, START_WIZARD);
 		int minCost = Integer.MAX_VALUE;
 		
 		for (int i = 0; i < paths.size(); i++) {
