@@ -2,10 +2,6 @@ package hogwarts;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
-
-import trees.BinarySearchTree;
-import trees.Node;
 
 public class Application {
 
