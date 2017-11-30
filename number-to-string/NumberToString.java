@@ -2,19 +2,18 @@ package interview;
 
 public class NumberToString 
 {
-	
 	private String getSingle(int i)
 	{
-		String [] numSt = {"", 
-						"one", 
-						"two", 
-						"three", 
-						"four", 
-						"five", 
-						"six",
-						"seven",
-						"eight",
-						"nine"};
+		String [] numSt = {	"", 
+					"one", 
+					"two", 
+					"three", 
+					"four", 
+					"five", 
+					"six",
+					"seven",
+					"eight",
+					"nine"};
 		
 		if(i < 0)
 		{
@@ -27,27 +26,27 @@ public class NumberToString
 	
 	private String getTens(int i)
 	{
-		String [] numSt = {"", 
-						"ten", 
-						"twenty", 
-						"thirty", 
-						"forty", 
-						"fifty", 
-						"sixty", 
-						"seventy", 
-						"eighty", 
-						"ninety"};
+		String [] numSt = {	"", 
+					"ten", 
+					"twenty", 
+					"thirty", 
+					"forty", 
+					"fifty", 
+					"sixty", 
+					"seventy", 
+					"eighty", 
+					"ninety"};
 		
-		String [] tensSt = {"ten",
-							"eleven",
-							"twelve",
-							"thirteen",
-							"fourteen",
-							"fifteen",
-							"sixteen",
-							"seventeen",
-							"eighteen",
-							"nineteen"};
+		String [] tensSt = {	"ten",
+					"eleven",
+					"twelve",
+					"thirteen",
+					"fourteen",
+					"fifteen",
+					"sixteen",
+					"seventeen",
+					"eighteen",
+					"nineteen"};
 		
 		int ones = i % 10;
 		int tens = (int) (i / 10);
@@ -60,7 +59,6 @@ public class NumberToString
 		{
 			return numSt[tens] + " " + this.getSingle(ones);
 		}
-		
 	}
 	
 	private String getHundred(int hundred)
@@ -107,7 +105,6 @@ public class NumberToString
 		}
 		
 		System.out.println(numSt);
-		
 	}
 	
 }
