@@ -1,4 +1,4 @@
-package interview;
+package numberString;
 
 public class NumberToString 
 {
