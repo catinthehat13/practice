@@ -8,7 +8,8 @@ public class WizardBFS {
 	final int START_WIZARD = 0;
 	final int END_WIZARD = 9;
 	
-	public int getCost(List<List<Integer>> wizards) {
+	// Given a list of wizards and who they know, compute the minimum cost it takes to get to the end wizard.
+	public int getMinimumCost(List<List<Integer>> wizards) {
 		List<List<Integer>> paths = this.getPath(START_WIZARD, wizards, START_WIZARD);
 		int minCost = Integer.MAX_VALUE;
 		

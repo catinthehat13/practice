@@ -31,7 +31,7 @@ public class Application {
 		wizards.add(school.getWizardList(wiz8));
 		wizards.add(school.getWizardList(wiz9));
 		
-		int cost = school.getCost(wizards);
+		int cost = school.getMinimumCost(wizards);
 		System.out.println("Minimum cost is: " + cost);
 	}
 }
