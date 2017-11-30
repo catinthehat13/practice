@@ -1,4 +1,4 @@
-package interview;
+package hogwarts;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,7 +10,7 @@ import trees.Node;
 public class Application {
 
 	public static void main(String[] args) {
-		Hogwarts school = new Hogwarts();
+		WizardBFS school = new WizardBFS();
 		
 		List<List<Integer>> wizards = new ArrayList();
 		int[] wiz0 = {1,2,3};
